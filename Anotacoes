@@ -1,0 +1,10 @@
+Program.cs = Inicio da Aplicacao
+
+entity framework: trabalha com duas classes principais
+Dbcontext: encapsula uma sessao com o banco de dados para uma
+determinado modelo de dados
+conecta com banco dados e estabele uma sessao com bd e fazendo operacoes
+nas entidades definidas no DbSet.
+
+DbSet: representa colecao de entidades de um dado tipo em um
+contexto. representa a tabela do DB.
