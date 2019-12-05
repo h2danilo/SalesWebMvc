@@ -21,9 +21,7 @@ namespace SalesWebMvc.Migrations
 
             modelBuilder.Entity("SalesWebMvc.Models.Department", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<int>("Id");
 
                     b.Property<string>("Name");
 
@@ -34,9 +32,7 @@ namespace SalesWebMvc.Migrations
 
             modelBuilder.Entity("SalesWebMvc.Models.SalesRecord", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<int>("Id");
 
                     b.Property<double>("Amount");
 
@@ -55,9 +51,7 @@ namespace SalesWebMvc.Migrations
 
             modelBuilder.Entity("SalesWebMvc.Models.Seller", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<int>("Id");
 
                     b.Property<double>("BaseSalary");
 

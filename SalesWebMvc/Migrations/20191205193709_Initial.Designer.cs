@@ -10,8 +10,8 @@ using SalesWebMvc.Models;
 namespace SalesWebMvc.Migrations
 {
     [DbContext(typeof(SalesWebMvcContext))]
-    [Migration("20191204175855_OtherEntities")]
-    partial class OtherEntities
+    [Migration("20191205193709_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,9 +23,7 @@ namespace SalesWebMvc.Migrations
 
             modelBuilder.Entity("SalesWebMvc.Models.Department", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<int>("Id");
 
                     b.Property<string>("Name");
 
@@ -36,9 +34,7 @@ namespace SalesWebMvc.Migrations
 
             modelBuilder.Entity("SalesWebMvc.Models.SalesRecord", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<int>("Id");
 
                     b.Property<double>("Amount");
 
@@ -57,9 +53,7 @@ namespace SalesWebMvc.Migrations
 
             modelBuilder.Entity("SalesWebMvc.Models.Seller", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<int>("Id");
 
                     b.Property<double>("BaseSalary");
 
