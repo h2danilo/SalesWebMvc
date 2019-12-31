@@ -1,16 +1,14 @@
 ﻿@model SalesWebMvc.Models.Seller
 
 @{
-    ViewData["Title"] = "Exclusão";
+    ViewData["Title"] = "Visualizar";
 }
 
 <h2>@ViewData["Title"]</h2>
 
-<h3>Deseja realmente excluir o Vendedor ?</h3>
-
 <div>
     <h4>Dados Vendedor</h4>
-    <hr/>
+    <hr />
     <dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.Name)
@@ -43,12 +41,8 @@
             @Html.DisplayFor(model => model.Department.Name)
         </dd>
     </dl>
-
-    <form asp-action="Delete">
-
-        <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Excluir" class="btn btn-danger btn-sm" />
-        <a asp-action="Index" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="top" title="Retornar para tela inicial"><span class="glyphicon glyphicon-remove"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cancelar</a>
-
-    </form>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="top" title="Alterar"><span class="glyphicon glyphicon-pencil"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alterar</a>
+    <a asp-action="Index" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="top" title="Retornar para tela inicial"><span class="glyphicon glyphicon-remove"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cancelar</a>
 </div>
